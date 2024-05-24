@@ -1,0 +1,89 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  background-color: #cccccc;
+  margin: 0;
+  padding: 0;
+}
+
+#father-content{
+  height: 100%;
+  width: 98%;
+  margin: 20px;
+}
+
+#manage{
+  display: flex;
+  width: 100%;
+}
+
+#process-selector{
+  display: grid;
+  border-right: 2px solid #797979;
+  padding-right: 21px;
+  width: 50%;
+}
+
+#processes-capture{
+  display: grid;
+}
+
+#register-catalogue{
+  width: 50%;
+  margin-left: 5%;
+}
+
+#inputs-catalogue{
+  display: grid;
+}
+
+input{
+  border-radius: 5px;
+  border: 2px solid #003366;
+  padding: 5px;
+  margin: 5px;
+  width: 45%;
+}
+
+#buttonsave{
+  width: 40%;
+  border-radius: 5px;
+  border: 2px solid #003366;
+  padding: 3px;
+  translate: 60%;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  position: static;
+  color: #ffffff;
+  background-color: #003366;
+}
+
+.title{
+  border-bottom: 1px solid #797979;
+  margin: 1% 2% 1% 2%;
+  padding-bottom: 0.5%;
+}
+
+#buttonsave:active{
+  background-color: #009933;
+  color: #cccccc;
+  transition: all 50ms ease;
+}
+
+#selector-memory, #selector-cpu{
+  height: 20px;
+  width: 20px;
+}
+
+#process-table{
+  margin: 20px 20px 0px 0px ;
+}
+
+#table-process{
+  border-radius: 5px;
+}
+
+#a { margin-left: 25px; width: 45%; }
+#b { margin-left: 16px; width: 45%; }
+
+

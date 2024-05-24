@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio Sistemas Operativos</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="title">
+      Captura y visualización de procesos
+    </ul>
+  </nav>
+
+  <div id="father-content">
+    <div id="manage">
+      <section id="process-selector">
+        <form id="processes-capture">
+          <label for=""># de procesos a capturar <input type="number" id="numbercapture" required
+              placeholder="ingresa un numero"></label>
+          <label for=""><input type="checkbox" name="" id="selector-memory" onchange="toggleCheckboxes(this)"> Mayor uso
+            de memoria</label>
+          <label for=""><input type="checkbox" name="" id="selector-cpu" onchange="toggleCheckboxes(this)"> Mayor uso de
+            CPU</label>
+        </form>
+      </section>
+
+      <section id="register-catalogue">
+         <form id="sender-cataolgue">
+          <div id="inputs-catalogue">
+            <label for="">Código del Catálogo <input type="number" id="a" required placeholder="numero del catalogo"></label>
+            <label for="">Nombre del Catálogo <input type="" id="b" required placeholder="nombre a tu catalogo"></label>
+          </div>
+          <button type="submit" id="buttonsave">Guardar</button>
+         </form>
+      </section>
+    </div>
+
+    <aside id="process-table">
+      <table class="table table-striped" id="table-process">
+        <thead>
+          <tr>
+            <th scope="col">PID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Usuario</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Prioridad</th>
+          </tr>
+        </thead>
+        <tbody id="processesTableBody"></tbody>
+      </table>
+    </aside>
+  </div>
+
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
